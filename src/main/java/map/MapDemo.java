@@ -43,11 +43,7 @@ public class MapDemo {
 		}*/
 
 
-		Question q = s.get(Question.class, 1);
 
-		for (Answer i: q.getAnswers()) {
-			System.out.println(i.getAnswerId() + " " + i.getAnswer());
-		}
 
 		tx.commit();
 		factory.close();
